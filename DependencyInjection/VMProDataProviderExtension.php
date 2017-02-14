@@ -3,21 +3,21 @@ namespace MovingImage\Bundle\DataProvider\VideoManagerPro\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
 /**
  * Class VMProDataProviderExtension
  *
  * @author Ruben Knol <ruben.knol@movingimage.com>
  */
-class VMProDataProviderExtension extends ConfigurableExtension
+class VMProDataProviderExtension extends Extension
 {
     /**
-     * @param array $mergedConfig
+     * @param array $configs
      * @param ContainerBuilder $container
      */
-    protected function loadInternal(array $mergedConfig, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container)
     {
         $loader = new YamlFileLoader(
             $container,
