@@ -24,6 +24,6 @@ class VMProDataProviderExtension extends Extension
             new FileLocator(__DIR__.'/../Resources/config')
         );
 
-        $loader->load('services/main.yml');
+        $loader->load('services.yml');
     }
 }
