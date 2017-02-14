@@ -1,0 +1,31 @@
+{
+  "name": "movingimage/vmpro-data-provider-bundle",
+  "description": "Symfony bundle that wires the VMPro DataProvider's services into the service container",
+  "type": "library",
+  "license": "Proprietary",
+  "authors": [
+    {
+      "name": "Ruben Knol",
+      "email": "ruben.knol@movingimage.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packagist.mi24.tv/"
+    }
+  ],
+  "config": {
+    "secure-http": false
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "MovingImage\\Bundle\\DataProvider\\": ""
+    }
+  }
+}
