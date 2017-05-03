@@ -1,4 +1,5 @@
 <?php
+
 namespace MovingImage\Bundle\DataProvider\VideoManagerPro\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
@@ -7,14 +8,14 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 /**
- * Class VMProDataProviderExtension
+ * Class VMProDataProviderExtension.
  *
  * @author Ruben Knol <ruben.knol@movingimage.com>
  */
 class VMProDataProviderExtension extends Extension
 {
     /**
-     * @param array $configs
+     * @param array            $configs
      * @param ContainerBuilder $container
      */
     public function load(array $configs, ContainerBuilder $container)

@@ -23,12 +23,15 @@
   "require": {
     "php": "^5.5 || ^7.0",
     "symfony/framework-bundle": "^2.7 || ^3.0",
-    "movingimage/vmpro-api-bundle": "dev-master",
-    "movingimage/data-provider-vmpro": "dev-master"
+    "movingimage/vmpro-api-bundle": "dev-huge-refactor",
+    "movingimage/data-provider-vmpro": "dev-PS-651"
   },
   "autoload": {
     "psr-4": {
       "MovingImage\\Bundle\\DataProvider\\VideoManagerPro\\": ""
     }
+  },
+  "require-dev": {
+    "movingimage/style-checker": "dev-master"
   }
 }
