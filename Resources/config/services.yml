@@ -5,3 +5,7 @@ services:
         class: MovingImage\DataProvider\VideoManagerPro
         arguments:
             - '@vmpro_api.client'
+    data_providers.vmprosearch:
+        class: MovingImage\DataProvider\VideoManagerProSearch
+        arguments:
+            - '@vmpro_api.client'
